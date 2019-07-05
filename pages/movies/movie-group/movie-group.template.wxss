@@ -1,0 +1,11 @@
+@import "../movie/movie-template.wxss";
+
+.movieGroup-container {
+  margin-top:30rpx;
+  /* height:1300rpx;  */
+}
+/* 使用竖向滚动时，需要给<scroll-view>一个固定高度，通过 WXSS 设置 height。 且不支持flex*/
+.movie-solider {
+  float: left;
+  margin-left:38rpx;
+}

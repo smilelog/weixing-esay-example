@@ -1,0 +1,5 @@
+<view class="container">
+    <image class="user-img" src="/images/avatar/4.png"></image>
+    <text class="user-name">hello w770s</text>
+    <view class="user-fir" bindtap='onTab'><text>首页</text></view>
+</view>

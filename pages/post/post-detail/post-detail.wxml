@@ -1,0 +1,22 @@
+<view class="container">
+  <image class="head-img" src="{{playMusic?postData.music.coverImg:postData.headImgSrc}}"></image>
+  <image class="head-hear" catchtap="musicPlay"  src="{{playMusic?'/images/music/music-stop.png':'/images/music/music-start.png'}}"></image>
+  <view class="detail-container">
+    <image class="avatar-img" src="{{postData.avatar}}"></image>
+    <text class="detail-athour">{{postData.author}}</text>
+    <text class="detail-day">{{postData.dateTime}}</text>
+    <text class="detail-where">{{postData.date}}</text>
+  </view>
+  <text class="detail-title">{{postData.title}}</text>
+  <view class="detail-img-container">
+  {{collect}}
+    <image wx:if="{{collected}}" catchtap="postcoll" class="detail-collection" src="/images/icon/collection.png"></image>
+    <image wx:else catchtap="postcoll" class="detail-collection" src="/images/icon/collection-anti.png"></image>
+    <image catchtap="shareTap" class="detail-share" src="/images/icon/share.png"></image>
+    <view class="detail-line"></view>
+  </view>
+  <view class="detail-content">
+    <text>{{postData.detail}}</text>
+  </view>
+
+</view>

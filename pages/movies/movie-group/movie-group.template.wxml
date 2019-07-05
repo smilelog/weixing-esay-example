@@ -1,0 +1,11 @@
+<import src="../movie/movie-template.wxml" />
+<template name="movieGroup">
+<view class="movieGroup-container" >
+  <block wx:for="{{movies}}" wx:for-item="item">
+    <view class="movie-solider" >
+      <template is="movie" data="{{...item}}" />
+    </view>
+  </block>
+</view> 
+</template>
+<!-- /* 使用竖向滚动时，需要给<scroll-view>一个固定高度，通过 WXSS 设置 height。 */ -->

@@ -1,0 +1,15 @@
+<import src="movie-list/movie-list-template.wxml" />
+<import src="movie-group/movie-group.template.wxml" />
+<view class="search-container">
+  <icon type="search" class="icon" />
+  <input placeholder="血战钢锯岭" class="input-search" placeholder-class="ui-input" bindfocus="onbindfocus" bindconfirm="onbindblur" />
+  <view class="imgbox" catchtap="delImg" ><image wx:if="{{movieGroupout}}" src="/images/icon/xx.png" class="ui-delimg"></image></view>
+</view>
+<view  wx:if="{{movieListOut}}">
+  <template is="movieList" data="{{...theaters}}" />
+  <template is="movieList" data="{{...comming}}" />
+  <template is="movieList" data="{{...top}}" />
+</view>
+<view wx:if="{{movieGroupout}}" >
+    <template is="movieGroup" data="{{...searchers}}"  />
+</view>  

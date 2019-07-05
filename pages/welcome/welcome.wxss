@@ -1,0 +1,28 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  background-color:#b3d4db;
+  height:100vh;
+}
+.user-img{
+  margin-top: 160rpx;
+  width:200rpx;
+  height:200rpx;
+}
+.user-name{
+  margin-top: 200rpx;
+  font-size:34rpx;
+  font-weight: bold;
+}
+.user-fir{
+  margin-top: 200rpx;
+  border: 1rpx solid #405f80;
+  width:200rpx;
+  text-align:center;
+  color: #405f80;
+  line-height:80rpx;
+  font-size:22rpx;
+  font-weight: bold;
+}
+

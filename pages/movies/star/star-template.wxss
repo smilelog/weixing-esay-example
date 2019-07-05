@@ -1,0 +1,21 @@
+.star-container{
+  margin-top:6rpx;
+  display:flex;
+  flex-direction: row;
+}
+.star{
+  display:flex;
+  flex-direction: row;
+  margin-right:24rpx;
+}
+.star image{
+  width: 20rpx;
+  height: 20rpx;
+  margin-right:2rpx;
+  margin-top: 8rpx;
+}
+.mark{
+  font-size: 30rpx;
+  color:black;
+  vertical-align: middle;
+}
